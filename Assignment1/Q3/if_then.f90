@@ -1,11 +1,11 @@
 program if_then
     implicit none
 
-    real :: val1, val2, val3
-    val1 = f_val(-0.5)
-    val2 = f_val(0.1)
-    val3 = f_val(2.5)
-    write(*,*) val1, val2, val3
+    real :: inp, val
+    write(*,*) 'Input value of x'
+    read(*,*) inp
+    val = f_val(inp)
+    write(*,*) val
 
     contains
 
@@ -13,7 +13,7 @@ program if_then
     real :: x
     if (x < 2) then
         f_val = 5*x**2 + 3*x + 2
-    elseif (x == 0) then
+    elseif (x == 2) then
         f_val = 0
     else
         f_val = 5*x**2 - 3*x + 1
