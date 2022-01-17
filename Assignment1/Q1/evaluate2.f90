@@ -1,5 +1,5 @@
 PROGRAM evaluate2
-    REAL, PARAMETER :: PI = 3.14159265
+    REAL*8, parameter :: PI = 4.D0*DATAN(1.D0)
     REAL :: x = 1.0
     REAL :: y = 2.0
     REAL :: a = 15.0
