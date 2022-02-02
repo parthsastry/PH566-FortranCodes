@@ -9,11 +9,11 @@ program ques4
 
     do i = 1,3
         call one_s(r(i), rdf(i,1))
-        rdf(i,1) = 4*pi*r(i)**2*rdf(i,1)
+        rdf(i,1) = 4*pi*r(i)**2*rdf(i,1)**2
         call two_s(r(i), rdf(i,2))
-        rdf(i,2) = 4*pi*r(i)**2*rdf(i,2)
+        rdf(i,2) = 4*pi*r(i)**2*rdf(i,2)**2
         call two_p(r(i), rdf(i,3))
-        rdf(i,3) = 4*pi*r(i)**2*rdf(i,3)
+        rdf(i,3) = 4*pi*r(i)**2*rdf(i,3)**2
     enddo
     write(*,*) "Numerical values of RDF for r = 0.5 - "
     write(*,1) rdf(1,1), rdf(2,1), rdf(3,1)
