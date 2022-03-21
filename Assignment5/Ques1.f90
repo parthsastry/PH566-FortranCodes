@@ -33,5 +33,6 @@ program ques1
     write(*,1) "Euler's Method answer = ", y_val
     ! RK 2nd order - h ~ 0.047 for second decimal place
     ! RK 4th order - h ~ 0.158 for second decimal place
+    ! I didn't explicitly find these h values, just used the error proportionality to estimate what the step size would be
 
 end program ques1
